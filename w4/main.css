@@ -1,0 +1,77 @@
+/* General HTML styles */
+html {
+    font-size: 22px; /* Base font size */
+}
+
+/* Body styles */
+body {
+    background-color: #333; /* Dark background */
+    color: whitesmoke; /* Light text color */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Header styles */
+header {
+    background-color: #444; /* Slightly lighter background for header */
+    padding: 1rem; /* Padding around header */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Inline navigation items */
+    margin-right: 20px; /* Space between items */
+}
+
+nav a {
+    color: aliceblue; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:visited {
+    color: lightgray; /* Color for visited links */
+}
+
+nav a:hover,
+nav a:active {
+    color: #eee; /* Color when hovering or active */
+}
+
+/* Main content styles */
+main {
+    padding: 1rem; /* Padding around main content */
+}
+
+/* Section styles */
+section {
+    margin-bottom: 2rem; /* Space between sections */
+}
+
+/* Figure styles */
+figure {
+    margin: 0; /* Remove default margin */
+}
+
+/* Table styles */
+table, tr, th, td, caption {
+    border: 1px solid #eee; /* Table border */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    border-collapse: collapse; /* Collapse borders */
+    padding: 0.5rem; /* Cell padding */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Centered text */
+    padding: 1rem; /* Padding around footer */
+    background-color: #444; /* Same as header */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+    color: whitesmoke; /* Text color */
+}
