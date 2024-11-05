@@ -58,11 +58,76 @@ figure {
 }
 
 /* Table styles */
-table, tr, th, td, caption {
-    border: 1px solid #eee; /* Table border */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font */
-    border-collapse: collapse; /* Collapse borders */
-    padding: 0.5rem; /* Cell padding */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #333; /* Dark text color for all table cells */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white; /* Keep the table header text white */
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Fun Form Styling */
+form {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Set a darker text color for better readability */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #444; /* Darker label color for better contrast */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Light background for inputs */
+    color: #333; /* Dark text color for better visibility */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #4CAF50; /* Green focus color for inputs */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 /* Footer styles */
