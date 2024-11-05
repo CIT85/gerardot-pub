@@ -5,7 +5,7 @@ html {
 
 /* Body styles */
 body {
-    background-color: #333; /* Dark background */
+    background-color: #2B2D42; /* Dark background */
     color: whitesmoke; /* Light text color */
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Font family */
@@ -52,11 +52,6 @@ section {
     margin-bottom: 2rem; /* Space between sections */
 }
 
-/* Figure styles */
-figure {
-    margin: 0; /* Remove default margin */
-}
-
 /* Table styles */
 table {
     width: 100%;
@@ -72,17 +67,19 @@ th, td {
     color: #333; /* Dark text color for all table cells */
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+/* Override Table Header Color */
+th {
+    background-color: #EF233C; /* Red color for the header */
+    color: white; /* Keep header text white */
 }
 
-th {
-    background-color: #4CAF50;
-    color: white; /* Keep the table header text white */
+/* Override Table Row Colors */
+tr:nth-child(even) {
+    background-color: #EDF2F4; /* Light color for even rows */
 }
 
 td {
-    background-color: #f9f9f9;
+    background-color: #EDF2F4; /* Grey background for table cells */
 }
 
 /* Fun Form Styling */
@@ -117,7 +114,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, in
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #8D99AE;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -140,3 +137,37 @@ footer {
     width: 100%; /* Full width */
     color: whitesmoke; /* Text color */
 }
+
+/* Color Palette Box Styles */
+.color-box {
+    width: 100px;       /* Set width of each color box */
+    height: 100px;      /* Set height of each color box */
+    margin: 10px;       /* Add some space around each color box */
+    display: inline-block; /* Make the boxes inline with each other */
+    border-radius: 5px;  /* Optional: adds rounded corners to the boxes */
+    border: 1px solid #ccc; /* Optional: adds a border around each box */
+}
+
+/* Color Palette Layout */
+#color-palette {
+    display: flex;
+    justify-content: center;  /* Center the color boxes */
+    flex-wrap: wrap;  /* Allow wrapping for small screens */
+    margin: 20px 0;   /* Add some margin around the color palette */
+    padding: 20px;    /* Add some padding inside the color palette section */
+    background-color: #2B2D42; /* Set background color for the section */
+}
+
+#color-palette h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #EDF2F4;  /* Light color for the title */
+}
+
+/* Hover Effect for Color Boxes */
+.color-box:hover {
+    opacity: 0.8;  /* Slight opacity change on hover */
+    cursor: pointer;
+}
+
+
