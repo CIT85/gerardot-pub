@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Define color variables */
+:root {
+    --primary-color: #004d99;
+    --secondary-color: #66ccff;
+    --background-color: #f4f4f4;
+    --content-bg-color: #ffffff;
+    --text-color: #333333;
+}
+
+/* Global Styles - Apply to the entire page */
+/* Apply Flexbox to the body for overall structure */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    flex: 0 1 auto;
+    background-color: #004d99; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+h2, h3 {
+    color: #004d99; /* Dark blue for headings */
+}
+
+/* Article Paragraphs */
+article p {
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    flex: 0 1 auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #66ccff; /* Light blue links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the color palette section */
+#color-palette {
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#color-palette h2 {
+    font-size: 24px;
+    color: #333; /* Dark text for contrast */
+}
+
+#color-palette p {
+    font-size: 16px;
+    color: #333; /* Dark text for readability */
+    margin: 5px 0 0;
+}
+
+/* Style for the container holding the color swatches */
+.color-swatch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the color boxes (swatches) */
+.swatch {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+/* Style for the color description text */
+.color-swatch p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    color: #333; /* Dark text for visibility */
+}
+
+/* --------------------------------------------------------- */
+/* Contact Page Styles - Scoped under .contact-page */
+.contact-page {
+    padding: 20px;
+    background-color: var(--content-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 70%; /* Fixed width for form container */
+    max-width: 800px; /* Max width for larger screens */
+}
+
+.contact-page h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-page p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-page .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.contact-page input,
+.contact-page textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-page textarea {
+    resize: vertical;
+}
+
+.contact-page button {
+    background-color: var(--button-bg-color);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.contact-page button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Additional Styling for Contact Form Elements */
+.contact-page input[type="text"],
+.contact-page input[type="email"] {
+    border-radius: 8px;
+}
+
+.contact-page button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.contact-page button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Mobile Devices - up to 480px */
+@media (max-width: 480px) {
+    /* Header Section */
+    header {
+        padding: 15px 0; /* Less padding for mobile */
+        text-align: center; /* Center text */
+    }
+
+     /* Navigation Menu */
+     nav ul {
+        display: block; /* Stack navigation items vertically */
+        text-align: left; /* Align menu items to the left */
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+     /* Main Content */
+     main {
+        padding: 15px; /* Less padding for mobile */
+    }
+
+    /* Section Styles */
+    section {
+        padding: 15px; /* Less padding for mobile */
+        margin-bottom: 15px; /* Reduce space between sections */
+    }
+
+    /* Footer Section */
+    footer {
+        padding: 15px; /* Less padding for footer */
+    }
+
+     /* Contact Page */
+     .contact-page {
+        width: 90%; /* Ensure the contact page form takes up most of the screen width */
+        margin: 0 auto; /* Center the contact form */
+    }
+
+    .contact-page h2 {
+        font-size: 24px; /* Adjust heading size for smaller screens */
+    }
+
+    .contact-page p {
+        font-size: 14px; /* Adjust paragraph size for readability */
+    }
+
+    /* Form Inputs */
+    .contact-page input,
+    .contact-page textarea {
+        font-size: 16px; /* Adjust font size for form inputs */
+        padding: 10px; /* Adjust padding for form inputs */
+    }
+
+    .contact-page button {
+        padding: 12px 20px; /* Adjust padding for button */
+        font-size: 16px; /* Adjust font size for button */
+    }
+
+    /* Make images responsive on small screens */
+    img {
+        max-width: 100%; /* Ensure images scale down to fit their container */
+        height: auto; /* Keep aspect ratio intact */
+        display: block; /* Make image a block element */
+        margin: 0 auto; /* Center the image */
+    }
+    /* Mobile responsiveness for JDM car performance page */
+    .car-performance {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+}
